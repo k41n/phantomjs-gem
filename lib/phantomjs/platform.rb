@@ -32,6 +32,7 @@ module Phantomjs
       end
 
       def system_phantomjs_installed?
+        puts "#{system_phantomjs_version} == #{Phantomjs.version}"
         system_phantomjs_version == Phantomjs.version
       end
 
